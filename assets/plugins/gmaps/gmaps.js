@@ -162,7 +162,8 @@ var GMaps = (function(global) {
 
   if (!(typeof window.google === 'object' && window.google.maps)) {
     if (typeof window.console === 'object' && window.console.error) {
-      console.error('Google Maps API is required. Please register the following JavaScript library https://maps.googleapis.com/maps/api/js.');
+      console.error('Google Maps API is required. Please register the following
+        JavaScript library https://maps.googleapis.com/maps/api/js.');
     }
 
     return function() {};
@@ -529,7 +530,7 @@ GMaps.prototype.createControl = function(options) {
   var control = document.createElement('div');
 
   control.style.cursor = 'pointer';
-  
+
   if (options.disableDefaultStyles !== true) {
     control.style.fontFamily = 'Roboto, Arial, sans-serif';
     control.style.fontSize = '11px';
@@ -543,7 +544,7 @@ GMaps.prototype.createControl = function(options) {
   if (options.id) {
     control.id = options.id;
   }
-  
+
   if (options.title) {
     control.title = options.title;
   }
@@ -580,7 +581,7 @@ GMaps.prototype.createControl = function(options) {
 
 GMaps.prototype.addControl = function(options) {
   var control = this.createControl(options);
-  
+
   this.controls.push(control);
   this.map.controls[control.position].push(control);
 
@@ -674,7 +675,7 @@ GMaps.prototype.createMarker = function(options) {
           if(!me.pixel){
             me.pixel = map.getProjection().fromLatLngToPoint(me.latLng)
           }
-          
+
           options[name].apply(this, [me]);
         });
       }
@@ -794,7 +795,7 @@ GMaps.prototype.removeMarkers = function (collection) {
 
       GMaps.fire('marker_removed', marker, this);
     }
-    
+
     this.markers = new_markers;
   }
   else {
@@ -848,7 +849,7 @@ GMaps.prototype.drawOverlay = function(options) {
     if (!options.layer) {
       options.layer = 'overlayLayer';
     }
-    
+
     var panes = this.getPanes(),
         overlayLayer = panes[options.layer],
         stop_overlay_events = ['contextmenu', 'DOMMouseScroll', 'dblclick', 'mousedown'];
