@@ -431,7 +431,27 @@
 
             <div class="comments-container center-block">
                 <h3 class="title">Deixe o seu comentário!</h3>
-                <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-width="100%" data-numposts="4" data-colorscheme="light"></div>
+
+                <div id="disqus_thread"></div>
+                    <script>
+
+                    var disqus_config = function () {
+                      this.page.url = "https://andrezaevagner.github.io";
+                      this.page.identifier = "andrezaevagner";
+                    };
+
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://andrezaevagner.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                    </script>
+                <noscript>
+                  Por favor habilite o JavaScript para visualizar os
+                  <a href="https://disqus.com/?ref_noscript">comentários
+                    fornecidos pelo Disqus.</a>
+                </noscript>
             </div>
         </div><!--//container-->
     </section><!--//comments-section-->
@@ -778,6 +798,6 @@
 
     <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE)
 	<script src="assets/js/demo/style-switcher.js"></script> -->
-
+<script id="dsq-count-scr" src="//andrezaevagner.disqus.com/count.js" async></script>
 </body>
 </html>
