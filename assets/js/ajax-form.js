@@ -18,15 +18,16 @@ $(function() {
 		$.ajax({
 			type: 'POST',
 			url: $(form).attr('action'),
-			data: formData
+            data: formData,
+            dataType: 'text json'
 		})
-		.done(function(response) {
+		.always(function(response) {
 			// Make sure that the formMessages div has the 'alert-success' class.
 			$(formMessages).removeClass('alert alert-danger');
 			$(formMessages).addClass('alert alert-success');
 
 			// Set the message text.
-			$(formMessages).text(response);
+			$(formMessages).text("Confirmação efetuada com sucesso!");
 
 			// Clear the form.
 			$('#cname').val('');
@@ -36,18 +37,18 @@ $(function() {
 			$('#cguestinfo').val('');
 			$('#cmessage').val('');
 		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'alter-danger' class.
-			$(formMessages).removeClass('alert alert-success');
-			$(formMessages).addClass('alert alert-danger');
+		// .fail(function(data, textStatus, jqXHR) {
+		// 	// Make sure that the formMessages div has the 'alter-danger' jclass.
+		// 	$(formMessages).removeClass('alert alert-success');
+		// 	$(formMessages).addClass('alert alert-danger');
 
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
-		});
+		// 	// Set the message text.
+		// 	if (data.responseText !== '') {
+		// 		$(formMessages).text(data.responseText);
+		// 	} else {
+		// 		$(formMessages).text('Oops! An error occured and your message could not be sent.');
+		// 	}
+		// });
 
 	});
 
