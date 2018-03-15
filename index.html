@@ -138,7 +138,8 @@
                                 20:30 - 21:30
                             </li>
                              <li><span class="icon-map love-icon"></span>
-                                Na Igreja de São Francisco em Betim.<br>
+                                Igreja de São Francisco - Praça dos
+                                Expedicionários, nº 60 - Angola - Betim/MG.<br>
                             <span class="direction-info display-block list-link">
                             <a href="index.html#"	data-toggle="modal"
 										           data-target="#direction-modal">
@@ -171,7 +172,7 @@
                             <span class="icon-clock love-icon"></span>22:00 - 02:00
                           </li>
                           <li>
-                            <span class="icon-map love-icon"></span>À definir<br>
+                            <span class="icon-map love-icon"></span>Sítio Sedução - R. Lírio, 515 - Vianópolis, Betim - MG<br>
                             <span class="direction-info display-block list-link">
                               <a href="index.html#" data-toggle="modal"
                                 data-target="#direction-modal">
@@ -194,10 +195,10 @@
 
         </div><!--//container-->
         <div id="map" class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15000.075495356128!2d-44.2052359!3d-19.9657085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6c39bbf36c955%3A0xd5087e7b0c8871c8!2sParoquia+Sao+Francisco+De+Assis!5e0!3m2!1spt-BR!2sbr!4v1504398221780"
+          <iframe src="https://www.google.com/maps/d/embed?mid=1BcXC-t4L-JSzoSRlHdO-ebnRTVNBmq6o&hl=pt-BR"
             width="1350" height="472" frameborder="0" style="border:0"
-            allowfullscreen></iframe>
+            allowfullscreen>
+          </iframe>
         </div><!--//map-container-->
     </section><!--//wedding-section-->
 
@@ -519,7 +520,7 @@
                 </div><!--//modal-header-->
                 <div class="modal-body">
                     <form id="rsvp-form" class="rsvp-form form" method="post"
-                      action="http://localhost:5000/rsvp/api/v1.0/rsvps">
+                      action="https://rsvp-rest-api.herokuapp.com/rsvp/api/v1.0/rsvps">
                         <div id="form-messages" class="text-center"></div>
                         <div class="row text-left">
                             <div class="name-group form-group col-xs-12 col-sm-6">
@@ -673,37 +674,42 @@
                                    direita.
                                  </p>
                         </div><!--//event-col-->
-                        <!-- <div class="event-col col-xs-12 col-sm-6"> -->
-                        <!--     <h4 class="col-title
-                          text-center">Reception</h4> -->
-                        <!--     <div class="col-subtitle script
-                          text-center">The Manor House</div> -->
-                        <!--     <div class="figure-container"><img
-                          class="img-responsive"
-                          src="assets/images/reception-building.jpg" alt=""
-                          /></div> -->
+                        <div class="event-col col-xs-12 col-sm-6">
+                            <h4 class="col-title text-center">Recepção</h4>
+                            <div class="col-subtitle script text-center">
+                                Sítio Sedução
+                            </div>
+                            <div class="figure-container">
+                              <img class="img-responsive"
+                                   src="assets/images/sitio-seducao.jpg"
+                                   alt=""/>
+                            </div>
+                            <h5 class="section-title">
+                                <i class="fa fa-car"></i> Carro</h5>
+                                <p>Siga pela Rodovia Fernão Dias (BR 381) no
+                                  sentido São Paulo até Betim. Após passar pelo
+                                  Shopping Partage e a Churrascaria Viganó,
+                                  faça uma curva suave a direita para a direita
+                                  na Avenida Amazonas em Betim. Siga pela
+                                  Avenida Amazonas até o bairro Vianópolis.
+                                  Quando no bairro, vire a primeira à esquerda
+                                  após a escola Barão do Rio Branco. Suba a rua
+                                  e vire à quarta a esquerda.
+                                </p>
+                               <h5 class="section-title">
+                                 <i class="fa fa-bus"></i>Ônibus</h5>
+                                 <p>Para quem pretende utilizar o transporte
+                                   público existem dois principais pontos de
+                                   partida: Estação Eldorado e Rodoviária de
+                                   Belo Horizonte. Através da Estação Eldorado
+                                   as opções de linha são <i>3211 e 6991</i>.
+                                   Desça no ponto em frente a escolha Barão do
+                                   Rio Branco. Vire a primeira à esquerda
+                                   após a escola Barão do Rio Branco.  Suba a
+                                   rua e vire à quarta a esquerda.
+                                 </p>
+                        </div><!--//event-col-->
 
-                        <!--     <h5 class="section-title"><i class="fa
-                            fa-car"></i> By Car</h5> -->
-                        <!--     <p>Lorem ipsum dolor sit amet, consectetuer
-                          adipiscing elit. Aenean commodo ligula eget dolor.
-                          Aenean massa. Cum sociis natoque penatibus.</p> -->
-                        <!--     <h5 class="section-title"><i class="fa
-                            fa-train"></i> By Train</h5> -->
-                        <!--     <p>Vivamus elementum semper nisi. Aenean
-                          vulputate eleifend tellus. Aenean leo ligula,
-                          porttitor eu, consequat vitae, eleifend ac, enim.
-                          Aliquam lorem ante, dapibus in, viverra quis, feugiat
-                          a, tellus. Phasellus viverra nulla ut metus varius
-                          laoreet. Vivamus elementum semper nisi. Aenean
-                          vulputate eleifend tellus. </p> -->
-                        <!--     <h5 class="section-title"><i class="fa
-                            fa-bus"></i> By Bus</h5> -->
-                        <!--     <p>Vivamus elementum semper nisi. Aenean
-                          vulputate eleifend tellus. Aenean leo ligula,
-                          porttitor eu, consequat vitae, eleifend ac, enim.</p>
-                        -->
-                        <!-- </div><!--//event-col--> 
                     </div><!--//row-->
                 </div><!--//modal-body-->
             </div><!--//modal-content-->
